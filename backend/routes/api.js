@@ -51,7 +51,7 @@ router.get("/secure", auth, (req, res) => {
 })
 
 router.get("/notsecure", (req, res) => {
-    res.send("No need of token");
+    res.send("No need of token ");
 })
 
 module.exports = router;
