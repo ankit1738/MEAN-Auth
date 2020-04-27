@@ -3,6 +3,7 @@ const router = express.Router();
 const User = require('../models/user');
 const auth = require('../middlewares/auth');
 
+
 router.get('/', (req, res) => {
     res.send("From API")
 });

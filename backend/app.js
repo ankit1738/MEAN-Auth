@@ -4,7 +4,6 @@ const bodyParser = require("body-parser");
 const api = require("./routes/api");
 const mongoose = require("mongoose");
 
-
 const db = "mongodb://localhost:27017/Auth";
 mongoose.connect(db, { useNewUrlParser: true }, err => {
     if(err)
@@ -13,7 +12,6 @@ mongoose.connect(db, { useNewUrlParser: true }, err => {
     console.log("Connected to MongoDB");
 });
 mongoose.Promise = global.Promise;
-
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
